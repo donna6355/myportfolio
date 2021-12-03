@@ -2,6 +2,7 @@
   <div class="cont" :style="{ display: !isMobile ? 'flex' : 'block' }">
     <hooper
       class="imgSlide"
+      style="margin: 0 auto"
       :style="{
         width: !isMobile ? (mode == 'vertical' ? '239px' : '60%') : '100%',
       }"

@@ -11,7 +11,7 @@
         :imgs="rplayImgs"
       />
     </div>
-    <div style="margin-top: 80px">
+    <div :style="{ 'margin-top': isMobile ? '40px' : '80px' }">
       <Frame
         mode="vertical"
         title="집사 일기 어플리케이션 제작"

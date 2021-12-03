@@ -122,18 +122,59 @@
       전다나입니다. <br />
     </div>
     <div style="margin-top: 36px">
-      <img src="../assets/skill.png" alt="htmlcssjs" style="width: 160px" />
-      <img src="../assets/vuejs.png" alt="vuejs" />
-      <img src="../assets/nodejs.png" alt="nodejs" />
-      <img src="../assets/mongo.png" alt="mongodb" /><br />
-      <img src="../assets/dart.png" alt="dart" />
-      <img src="../assets/flutter.png" alt="flutter" />
-      <img src="../assets/git.png" alt="git" />
+      <img
+        src="../assets/skill.png"
+        alt="htmlcssjs"
+        :style="{ width: isMobile ? '80px' : '160px' }"
+      />
+      <img
+        src="../assets/vuejs.png"
+        alt="vuejs"
+        :style="{ width: isMobile ? '80px' : '160px' }"
+      />
+      <img
+        src="../assets/nodejs.png"
+        alt="nodejs"
+        :style="{ width: isMobile ? '80px' : '160px' }"
+      />
+      <img
+        src="../assets/mongo.png"
+        alt="mongodb"
+        :style="{ width: isMobile ? '80px' : '160px' }"
+      /><br />
+      <img
+        src="../assets/dart.png"
+        alt="dart"
+        :style="{ width: isMobile ? '80px' : '160px' }"
+      />
+      <img
+        src="../assets/flutter.png"
+        alt="flutter"
+        :style="{ width: isMobile ? '80px' : '160px' }"
+      />
+      <img
+        src="../assets/git.png"
+        alt="git"
+        :style="{ width: isMobile ? '80px' : '160px' }"
+      />
       <br v-if="isMobile" />
       <!-- <br /> -->
-      <img src="../assets/sk4.png" alt="photoshop" />
-      <img src="../assets/sk5.png" alt="illustrator" style="margin: 4px 8px" />
-      <img src="../assets/sk6.png" alt="XD" />
+      <img
+        src="../assets/sk4.png"
+        alt="photoshop"
+        :style="{ width: isMobile ? '30px' : '60px' }"
+      />
+      <img
+        src="../assets/sk5.png"
+        alt="illustrator"
+        style="margin: 4px 8px"
+        :style="{ width: isMobile ? '30px' : '60px' }"
+      />
+      <img
+        src="../assets/sk6.png"
+        alt="XD"
+        :style="{ width: isMobile ? '30px' : '60px' }"
+      />
     </div>
   </div>
 </template>

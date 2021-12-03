@@ -10,7 +10,7 @@
     <router-view
       :isMobile="isMobile"
       :style="{
-        width: isMobile ? '100%' : '70%',
+        width: isMobile ? '90%' : '70%',
         margin: isMobile ? '80px auto 0' : '120px auto 0',
       }"
     />
@@ -43,7 +43,6 @@ export default {
 
 <style>
 #app {
-  width: 100%;
   margin: 0 auto;
   font-family: Roboto, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -53,9 +52,9 @@ export default {
 }
 
 #nav {
-  width: 100%;
   position: absolute;
   left: 0;
+  right: 0;
   top: 0;
   padding: 16px;
   color: #2e2e2c;
