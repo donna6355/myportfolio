@@ -92,3 +92,10 @@ ol {
   margin: 120px auto 0;
 }
 </style>
+
+// how to deploy github //
+https://medium.com/swlh/deploy-vue-app-to-github-pages-2ada48d7397e //
+vue.config.js // deploy.sh // chmod +x deploy.sh // "scripts": { // "serve":
+"vue-cli-service serve", // "build": "vue-cli-service build", // "lint":
+"vue-cli-service lint", // "deploy": "sh deploy.sh" // }, // git remote add
+origin https://github.com/~ // git push -u origin master // npm run deploy

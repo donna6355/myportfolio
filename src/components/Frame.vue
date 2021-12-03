@@ -3,8 +3,7 @@
     <hooper
       class="imgSlide"
       :style="{
-        width: !isMobile ? (mode == 'vertical' ? '277px' : '60%') : '100%',
-        'margin-right': !isMobile ? '24px' : '0',
+        width: !isMobile ? (mode == 'vertical' ? '239px' : '60%') : '100%',
       }"
       :infiniteScroll="true"
       :wheelControl="false"
@@ -18,7 +17,14 @@
       <hooper-navigation slot="hooper-addons"></hooper-navigation>
       <HooperPagination slot="hooper-addons"></HooperPagination>
     </hooper>
-    <div style="text-align: left">
+    <div
+      style="text-align: left"
+      :style="{
+        padding: !isMobile ? '0 24px' : '0',
+        order: !isMobile && mode == 'vertical' ? '-99' : '99',
+        width: !isMobile && mode == 'vertical' ? '58%' : 'auto',
+      }"
+    >
       <div class="flexRow">
         <div style="width: 60px; height: 60px" class="center">
           <img
@@ -33,12 +39,10 @@
       </div>
       <h5>{{ period }}</h5>
       <a :href="url" target="_blank">{{ url }}</a>
-      <h4>주요 기술 스택</h4>
+      <h4>Check Point</h4>
       <ul>
-        <li>details</li>
-        <li>details</li>
-        <li>details</li>
-        <li>details</li>
+        <li>What I have considered on this project</li>
+        <li>What I have learnt from thie project</li>
       </ul>
     </div>
   </div>
