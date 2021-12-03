@@ -2,9 +2,9 @@
   <div class="cont" :style="{ display: !isMobile ? 'flex' : 'block' }">
     <hooper
       class="imgSlide"
-      style="margin: 0 auto"
       :style="{
-        width: !isMobile ? (mode == 'vertical' ? '239px' : '60%') : '100%',
+        width: mode == 'vertical' ? '239px' : isMobile ? '100%' : '60%',
+        margin: mode == 'vertical' ? '0 auto' : '0',
       }"
       :infiniteScroll="true"
       :wheelControl="false"
@@ -38,7 +38,7 @@
           {{ title }}
         </h3>
       </div>
-      <h5>{{ period }}</h5>
+      <h4>{{ period }}</h4>
       <a :href="url" target="_blank">{{ url }}</a>
       <h4>Check Point</h4>
       <ul>

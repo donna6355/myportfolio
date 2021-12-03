@@ -12,6 +12,7 @@
       :style="{
         width: isMobile ? '90%' : '70%',
         margin: isMobile ? '80px auto 0' : '120px auto 0',
+        'padding-bottom': isMobile ? '20px' : '40px',
       }"
     />
   </div>
