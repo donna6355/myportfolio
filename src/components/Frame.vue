@@ -42,8 +42,8 @@
       <a :href="url" target="_blank">{{ url }}</a>
       <h4>Check Point</h4>
       <ul>
-        <li>What I have considered on this project</li>
-        <li>What I have learnt from thie project</li>
+        <li v-for="(detail, idx) in details" :key="idx">{{ detail }}</li>
+        <!-- <li>What I have learnt from thie project</li> -->
       </ul>
     </div>
   </div>
@@ -99,10 +99,10 @@ export default {
       type: Array,
       require: true,
     },
-    // details: {
-    //   type: Array,
-    //   require: true,
-    // },
+    details: {
+      type: Array,
+      require: true,
+    },
   },
   computed: {
     howToAlign() {
