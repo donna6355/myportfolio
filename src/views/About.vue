@@ -1,11 +1,16 @@
 <template>
   <div class="about">
     <h2>개발자 전다나</h2>
-    <p>
-      과거에는 국제 행사 기획을, 현재는 코딩을 하는 1년차 개발자 <br />
-      정확한 문제 파악부터 해결 방안까지 고민하는 프로 문제 해결러<br />
-      말썽꾸러기 반려묘에게 꼼짝 못하는 호구 집사
-    </p>
+    <ol>
+      <li>과거에는 국제 행사 기획을, 현재는 코딩을 하는 1년차 개발자</li>
+      <li>정확한 문제 파악부터 해결 방안까지 고민하는 프로 문제 해결러</li>
+      <li>말썽꾸러기 반려묘에게 꼼짝 못하는 호구 집사</li>
+      <li>
+        <a class="git" href="https://github.com/donna6355" target="_blank"
+          >github 둘러보기</a
+        >
+      </li>
+    </ol>
     <h3>Career</h3>
     <ol>
       <li>2020.11 - 현재 플랙스 뉴럴랩스 재직중</li>
@@ -25,12 +30,14 @@
       <li>컨벤션 기획사 2급</li>
     </ol>
     <h3>Contacts</h3>
-    <p>
-      phone number: 010.5763.6355 <br />
-      email: donnajun1214@gmail.com <br />
-      kakao:
-    </p>
-    <a href="https://github.com/donna6355" target="_blank">github 둘러보기</a>
+    <ol>
+      <li>
+        <a href="mailto:donnajun1214@gmail.com"
+          >이메일 보내기 : donnajun1214@gmail.com</a
+        >
+      </li>
+      <li>카카오톡 : donnajun12124</li>
+    </ol>
   </div>
 </template>
 <script>
@@ -44,3 +51,19 @@ export default {
   },
 };
 </script>
+<style scoped>
+.about {
+  text-align: left;
+}
+li {
+  line-height: 1.8;
+}
+ol {
+  padding-left: 8px;
+}
+.git {
+  margin: 8px 0;
+  font-weight: bold;
+  color: navy;
+}
+</style>

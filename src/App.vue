@@ -61,6 +61,11 @@ export default {
   color: #2e2e2c;
   background: rgba(0, 0, 0, 0.5);
 }
+a,
+a:visited {
+  color: #2e2e2c;
+  text-decoration: none;
+}
 
 #nav a {
   padding: 0 8px;
