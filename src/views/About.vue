@@ -55,12 +55,6 @@ export default {
 .about {
   text-align: left;
 }
-li {
-  line-height: 1.8;
-}
-ol {
-  padding-left: 8px;
-}
 .git {
   margin: 8px 0;
   font-weight: bold;

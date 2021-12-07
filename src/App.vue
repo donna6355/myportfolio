@@ -80,6 +80,10 @@ a:visited {
 ul,
 ol {
   list-style: none;
+  padding-left: 8px;
+}
+li {
+  line-height: 1.8;
 }
 
 .flexRow {
