@@ -1,17 +1,41 @@
 <template>
-  <div id="app">
+  <div
+    id="app"
+    :style="{
+      background: darkMode ? '#000' : '#fff',
+      color: darkMode ? '#cecece' : '#2c3e50',
+    }"
+  >
     <div id="nav">
       <router-link to="/" :style="fontSizeMob">Donna's Home</router-link>
       |
       <router-link to="/project" :style="fontSizeMob">Project</router-link>
       |
       <router-link to="/about" :style="fontSizeMob">About</router-link>
+
+      <button
+        @click="updateDarkMode"
+        style="
+          padding: 4px;
+          border-width: 0;
+          border-radius: 50%;
+          position: absolute;
+          right: 12px;
+          top: 12px;
+        "
+      >
+        <img
+          :src="require(`@/assets/${darkMode ? 'dark' : 'light'}.svg`)"
+          alt="darkmode"
+        />
+      </button>
     </div>
     <router-view
       :isMobile="isMobile"
+      style="margin: 0 auto; min-height: 90vh"
       :style="{
         width: isMobile ? '90%' : '70%',
-        margin: isMobile ? '80px auto 0' : '120px auto 0',
+        'padding-top': isMobile ? '80px' : '120px',
         'padding-bottom': isMobile ? '20px' : '40px',
       }"
     />
@@ -22,6 +46,9 @@
 export default {
   name: "App",
   computed: {
+    darkMode() {
+      return this.$store.getters.isDarkMode;
+    },
     fontSizeMob() {
       return {
         "font-size": this.isMobile ? "16px" : "20px",
@@ -39,6 +66,11 @@ export default {
       }
     },
   },
+  methods: {
+    updateDarkMode() {
+      this.$store.dispatch("changeDarkMode");
+    },
+  },
 };
 </script>
 
@@ -49,7 +81,6 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
 }
 
 #nav {
@@ -75,7 +106,7 @@ a:visited {
 }
 
 #nav a.router-link-exact-active {
-  color: #fff;
+  color: #cecece;
 }
 ul,
 ol {
