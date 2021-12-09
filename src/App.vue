@@ -95,7 +95,6 @@ export default {
 a,
 a:visited {
   color: #2e2e2c;
-  text-decoration: none;
 }
 
 #nav a {
@@ -106,7 +105,7 @@ a:visited {
 }
 
 #nav a.router-link-exact-active {
-  color: #cecece;
+  color: #fff;
 }
 ul,
 ol {

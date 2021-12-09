@@ -1,14 +1,22 @@
 <template>
   <div class="about">
-    <div>drawing</div>
+    <div style="width: 320px; height: 320px">
+      <img src="@/assets/about.png" alt="miao" style="width: 100%" />
+    </div>
     <div>
-      <h2>개발자 전다나</h2>
+      <h2 :style="{ 'margin-top': isMobile ? null : '0' }">개발자 전다나</h2>
       <ol>
         <li>과거에는 국제 행사 기획을, 현재는 코딩을 하는 1년차 개발자</li>
         <li>정확한 문제 파악부터 해결 방안까지 고민하는 프로 문제 해결러</li>
         <li>말썽꾸러기 반려묘에게 꼼짝 못하는 호구 집사</li>
         <li>
-          <a class="git" href="https://github.com/donna6355" target="_blank"
+          <a
+            class="git"
+            href="https://github.com/donna6355"
+            target="_blank"
+            :style="{
+              color: darkMode ? '#ceecf8' : '#0492c2',
+            }"
             >github 둘러보기</a
           >
         </li>
@@ -34,7 +42,11 @@
       <h3>Contacts</h3>
       <ol>
         <li>
-          <a href="mailto:donnajun1214@gmail.com"
+          <a
+            href="mailto:donnajun1214@gmail.com"
+            :style="{
+              color: darkMode ? '#ceecf8' : '#0492c2',
+            }"
             >이메일 보내기 : donnajun1214@gmail.com</a
           >
         </li>
@@ -52,17 +64,22 @@ export default {
       require: true,
     },
   },
+  computed: {
+    darkMode() {
+      return this.$store.getters.isDarkMode;
+    },
+  },
 };
 </script>
 <style scoped>
 .about {
   text-align: left;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
+  justify-content: space-around;
 }
 .git {
   margin: 8px 0;
   font-weight: bold;
-  color: navy;
 }
 </style>

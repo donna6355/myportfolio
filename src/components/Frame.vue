@@ -39,7 +39,14 @@
         </h3>
       </div>
       <h4>{{ period }}</h4>
-      <a :href="url" target="_blank">{{ url }}</a>
+      <a
+        :href="url"
+        target="_blank"
+        :style="{
+          color: darkMode ? '#ceecf8' : '#0492c2',
+        }"
+        >{{ url }}</a
+      >
       <h4>Check Point</h4>
       <ul>
         <li v-for="(detail, idx) in details" :key="idx">{{ detail }}</li>
@@ -105,6 +112,9 @@ export default {
     },
   },
   computed: {
+    darkMode() {
+      return this.$store.getters.isDarkMode;
+    },
     howToAlign() {
       return this.isMobile && this.mode !== "vertical"
         ? null
