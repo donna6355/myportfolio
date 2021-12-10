@@ -20,8 +20,10 @@
           border-width: 0;
           border-radius: 50%;
           position: absolute;
-          right: 12px;
+          right: 8px;
           top: 12px;
+          width: 28px;
+          height: 28px;
         "
       >
         <img
