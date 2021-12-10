@@ -2,7 +2,7 @@
   <div
     id="app"
     :style="{
-      background: darkMode ? '#000' : '#fff',
+      background: darkMode ? '#282828' : '#fff',
       color: darkMode ? '#cecece' : '#2c3e50',
     }"
   >
@@ -104,6 +104,9 @@ a:visited {
   text-decoration: none;
   font-weight: bold;
   color: #2e2e2c;
+}
+#nav a:hover {
+  color: #b3b3b3;
 }
 
 #nav a.router-link-exact-active {
