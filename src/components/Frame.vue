@@ -47,6 +47,18 @@
         }"
         >{{ url }}</a
       >
+      <h4>주요 스택</h4>
+      <p>
+        <span
+          v-for="(detail, idx) in stacks"
+          :key="idx"
+          class="roundBox"
+          :style="{
+            border: darkMode ? '0.4px solid #cecece' : '0.4px solid gray',
+          }"
+          >{{ detail }}</span
+        >
+      </p>
       <h4>Check Point</h4>
       <ul>
         <li v-for="(detail, idx) in details" :key="idx">{{ detail }}</li>
@@ -110,6 +122,10 @@ export default {
       type: Array,
       require: true,
     },
+    stacks: {
+      type: Array,
+      require: true,
+    },
   },
   computed: {
     darkMode() {
@@ -132,5 +148,10 @@ export default {
   border: 1px solid gray;
   border-radius: 16px;
   overflow: hidden;
+}
+.roundBox {
+  padding: 4px 8px;
+  margin: 0 4px;
+  border-radius: 8px;
 }
 </style>

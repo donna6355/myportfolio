@@ -10,6 +10,7 @@
         url="https://rplay.live/"
         :imgs="rplayImgs"
         :details="rplayDetails"
+        :stacks="rplayStacks"
       />
     </div>
     <div :style="{ 'margin-top': isMobile ? '40px' : '80px' }">
@@ -22,6 +23,7 @@
         url="https://play.google.com/store/apps/details?id=com.donna6355.butler_diary"
         :imgs="butlerImgs"
         :details="butlerDetails"
+        :stacks="butlerStacks"
       />
     </div>
   </div>
@@ -64,6 +66,8 @@ export default {
         "데이터 저장을 위해 어떤 방식을 사용할 것인가",
         "어플 기획부터 구글 플레이 스토어 출시 및 버전 업데이트까지",
       ],
+      rplayStacks: ["Vuejs", "Nodejs", "MongoDB", "Tailwindcss"],
+      butlerStacks: ["Dart", "Flutter", "Hive", "Provider"],
     };
   },
 };
