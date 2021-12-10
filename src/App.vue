@@ -15,12 +15,12 @@
 
       <button
         @click="updateDarkMode"
+        :style="{ right: isMobile ? '8px' : '12px' }"
         style="
           padding: 4px;
           border-width: 0;
           border-radius: 50%;
           position: absolute;
-          right: 8px;
           top: 12px;
           width: 28px;
           height: 28px;
