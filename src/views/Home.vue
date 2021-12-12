@@ -235,7 +235,7 @@
     </div>
     <div style="margin-top: 36px">
       <img
-        src="../assets/skill.png"
+        src="../assets/skills.png"
         alt="htmlcssjs"
         :style="{ width: isMobile ? '80px' : '160px' }"
       />
@@ -272,20 +272,9 @@
       <br v-if="isMobile" />
       <!-- <br /> -->
       <img
-        src="../assets/sk4.png"
+        src="../assets/design.png"
         alt="photoshop"
-        :style="{ width: isMobile ? '30px' : '60px' }"
-      />
-      <img
-        src="../assets/sk5.png"
-        alt="illustrator"
-        style="margin: 4px 8px"
-        :style="{ width: isMobile ? '30px' : '60px' }"
-      />
-      <img
-        src="../assets/sk6.png"
-        alt="XD"
-        :style="{ width: isMobile ? '30px' : '60px' }"
+        :style="{ width: isMobile ? '80px' : '160px' }"
       />
     </div>
   </div>

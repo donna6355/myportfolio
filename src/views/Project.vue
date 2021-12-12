@@ -3,7 +3,7 @@
     <div>
       <Frame
         mode="horizontal"
-        title="Rplay 사이트 고도화 및 유지 보수"
+        title="사이트 고도화 및 유지 보수"
         :isMobile="isMobile"
         img="rplay.svg"
         period="플랙스뉴럴랩스 재직중  |  2020.11 ~ 현재"
@@ -16,7 +16,7 @@
     <div :style="{ 'margin-top': isMobile ? '40px' : '80px' }">
       <Frame
         mode="vertical"
-        title="집사 일기 어플리케이션"
+        title="집사 일기 앱 제작"
         :isMobile="isMobile"
         period="개인 프로젝트  |  2021.09 ~ 11"
         img="butler.png"
@@ -67,7 +67,14 @@ export default {
         "어떤 라이브러리가 성능, 기능 면에서 나의 어플과 잘 맞는가",
         "데이터 저장을 위해 어떤 방식을 사용할 것인가",
       ],
-      rplayStacks: ["Vuejs", "Nodejs", "MongoDB", "Tailwindcss"],
+      rplayStacks: [
+        "Vuejs",
+        "Vuex",
+        "Router",
+        "Nodejs",
+        "MongoDB",
+        "Tailwindcss",
+      ],
       butlerStacks: ["Dart", "Flutter", "Hive", "Provider"],
     };
   },
