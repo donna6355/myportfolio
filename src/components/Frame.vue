@@ -1,5 +1,10 @@
 <template>
-  <div class="cont" :style="{ display: !isMobile ? 'flex' : 'block' }">
+  <div
+    class="cont"
+    :style="{
+      display: !isMobile ? 'flex' : 'block',
+    }"
+  >
     <hooper
       class="imgSlide"
       :style="{
@@ -23,7 +28,7 @@
       :style="{
         padding: !isMobile ? '0 24px' : '0',
         order: !isMobile && mode == 'vertical' ? '-99' : '99',
-        width: !isMobile && mode == 'vertical' ? '58%' : 'auto',
+        width: isMobile ? '100%' : mode == 'vertical' ? '58%' : '35%',
       }"
     >
       <div class="flexRow">
@@ -48,7 +53,7 @@
         >{{ url }}</a
       >
       <h4>주요 스택</h4>
-      <p>
+      <p style="display: flex; flex-flow: row wrap; row-gap: 4px">
         <span
           v-for="(detail, idx) in stacks"
           :key="idx"

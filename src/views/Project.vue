@@ -70,7 +70,7 @@ export default {
       rplayStacks: [
         "Vuejs",
         "Vuex",
-        "Router",
+        "Vue Router",
         "Nodejs",
         "MongoDB",
         "Tailwindcss",
