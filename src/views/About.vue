@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <div style="width: 320px; height: 320px">
-      <img src="@/assets/about.png" alt="miao" style="width: 100%" />
+      <img src="@/assets/profile.png" alt="miao" style="width: 100%" />
     </div>
     <div>
       <h2 :style="{ 'margin-top': isMobile ? null : '0' }">개발자 전다나</h2>
