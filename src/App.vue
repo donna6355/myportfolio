@@ -61,18 +61,32 @@ export default {
         /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
           navigator.userAgent
         )
-      ) {
+      )
         return true;
-      } else {
-        return false;
-      }
+      else if (document.body.offsetWidth < 1400) return true;
+      else return false;
     },
   },
   methods: {
     updateDarkMode() {
       this.$store.dispatch("changeDarkMode");
     },
+    // updateWidth() {
+    //   this.width = document.body.offsetWidth;
+    // },
   },
+  // mounted() {
+  //   this.width = document.body.offsetWidth;
+  //   window.addEventListener("resize", this.updateWidth);
+  // },
+  // beforeDestroy() {
+  //   window.removeEventListener("resize", this.updateWidth);
+  // },
+  // data() {
+  //   return {
+  //     width: 0,
+  //   };
+  // },
 };
 </script>
 
