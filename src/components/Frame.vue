@@ -4,6 +4,7 @@
     :style="{
       display: !isMobile ? 'flex' : 'block',
     }"
+    style="align-items: center"
   >
     <hooper
       class="imgSlide"
@@ -11,6 +12,7 @@
         width: mode == 'vertical' ? '239px' : isMobile ? '100%' : '60%',
         margin: mode == 'vertical' ? '0 auto' : '0',
       }"
+      style="background: #fff"
       :infiniteScroll="true"
       :wheelControl="false"
     >
