@@ -225,8 +225,6 @@
       </svg>
     </div>
     <div class="introtext">
-      안녕하세요.<br />
-      <br />
       새로운 시도를 좋아하는 개발자<br />
       UX를 고민하는 개발자<br />
       꼼꼼한 개발자<br />
