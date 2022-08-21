@@ -23,7 +23,12 @@ const routes = [
     path: "/project",
     name: "Project",
     component: () =>
-      import(/* webpackChunkName: "rplay" */ "../views/Project.vue"),
+      import(/* webpackChunkName: "project" */ "../views/Project.vue"),
+  },
+  {
+    path: "/test",
+    name: "Test",
+    component: () => import(/* webpackChunkName: "test" */ "../views/Test.vue"),
   },
 ];
 

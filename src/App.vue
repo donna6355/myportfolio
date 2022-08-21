@@ -12,6 +12,8 @@
       <router-link to="/project" :style="fontSizeMob">Project</router-link>
       |
       <router-link to="/about" :style="fontSizeMob">About</router-link>
+      |
+      <router-link to="/test" :style="fontSizeMob">Test</router-link>
 
       <button
         @click="updateDarkMode"
