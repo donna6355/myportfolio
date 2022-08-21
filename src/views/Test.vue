@@ -2,16 +2,22 @@
   <div class="test">
     <ul>
       <li>
-        <a href="@/assets/profile.png" download>png image</a>
+        <video width="320" height="240" controls>
+          <source src="../assets/lovely.mp4" type="video/mp4" />
+        </video>
       </li>
       <li>
-        <a href="@/assets/lovely.mp4" download>mp4 video</a>
+        <a
+          href="https://donna6355.github.io/myportfolio/media/lovely.94bcc1f2.mp4"
+          download
+          >mp4 video</a
+        >
       </li>
       <li>
-        <a href="@/assets/resume.pdf" download>pdf file</a>
+        <a href="../assets/swift.pdf" download="pdf">pdf file</a>
       </li>
       <li>
-        <a href="@/assets/resume.pdf" download>apk file</a>
+        <a href="../assets/swift.pdf" download="pdf">apk file</a>
       </li>
     </ul>
   </div>
