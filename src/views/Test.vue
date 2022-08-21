@@ -14,6 +14,13 @@
         >
       </li>
       <li>
+        <a
+          href="https://drive.google.com/uc?export=download&id=158AJX_lVdxUu5SjLxaspk3AWMQZttjqo"
+          download
+          >google drive link</a
+        >
+      </li>
+      <li>
         <a href="../assets/swift.pdf" download="pdf">pdf file</a>
       </li>
       <li>
