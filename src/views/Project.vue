@@ -2,11 +2,24 @@
   <div>
     <div>
       <Frame
+        mode="vertical"
+        title="베타 앱 개발"
+        :isMobile="isMobile"
+        img="rplay.svg"
+        period="플랙스뉴럴랩스  |  2020.12 ~ 2022.04"
+        url="https://play.google.com/store/apps/details?id=live.rplay"
+        :imgs="rplayAppImgs"
+        :details="rplayAppDetails"
+        :stacks="rplayAppStacks"
+      />
+    </div>
+    <div :style="{ 'margin-top': isMobile ? '40px' : '80px' }">
+      <Frame
         mode="horizontal"
         title="사이트 고도화 및 유지 보수"
         :isMobile="isMobile"
         img="rplay.svg"
-        period="플랙스뉴럴랩스 재직중  |  2020.11 ~ 현재"
+        period="플랙스뉴럴랩스 |  2020.11 ~ 2022.04"
         url="https://rplay.live/"
         :imgs="rplayImgs"
         :details="rplayDetails"
@@ -48,6 +61,7 @@ export default {
         "rplay_4.png",
         "rplay_5.png",
       ],
+      rplayAppImgs: ["rplay_app_1.png", "rplay_app_2.png", "rplay_app_3.png"],
       butlerImgs: [
         "butler_1.png",
         "butler_2.png",
@@ -67,6 +81,12 @@ export default {
         "어떤 라이브러리가 성능, 기능 면에서 나의 어플과 잘 맞는가",
         "데이터 저장을 위해 어떤 방식을 사용할 것인가",
       ],
+      rplayAppDetails: [
+        "안드로이드와 아이폰을 아우르는 크로스플랫폼",
+        "API 호출과 인터셉터 활용",
+        "위젯을 이용한 다양한 UI 구현",
+      ],
+      rplayAppStacks: ["Dart", "Flutter", "GetX", "Dio"],
       rplayStacks: [
         "Vuejs",
         "Vuex",

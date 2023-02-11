@@ -233,26 +233,6 @@
     </div>
     <div style="margin-top: 36px">
       <img
-        src="../assets/skills.png"
-        alt="htmlcssjs"
-        :style="{ width: isMobile ? '80px' : '160px' }"
-      />
-      <img
-        src="../assets/vuejs.png"
-        alt="vuejs"
-        :style="{ width: isMobile ? '80px' : '160px' }"
-      />
-      <img
-        src="../assets/nodejs.png"
-        alt="nodejs"
-        :style="{ width: isMobile ? '80px' : '160px' }"
-      />
-      <img
-        src="../assets/mongo.png"
-        alt="mongodb"
-        :style="{ width: isMobile ? '80px' : '160px' }"
-      /><br />
-      <img
         src="../assets/dart.png"
         alt="dart"
         :style="{ width: isMobile ? '80px' : '160px' }"
@@ -272,6 +252,27 @@
       <img
         src="../assets/design.png"
         alt="photoshop"
+        :style="{ width: isMobile ? '80px' : '160px' }"
+      />
+      <br />
+      <img
+        src="../assets/skills.png"
+        alt="htmlcssjs"
+        :style="{ width: isMobile ? '80px' : '160px' }"
+      />
+      <img
+        src="../assets/vuejs.png"
+        alt="vuejs"
+        :style="{ width: isMobile ? '80px' : '160px' }"
+      />
+      <img
+        src="../assets/nodejs.png"
+        alt="nodejs"
+        :style="{ width: isMobile ? '80px' : '160px' }"
+      />
+      <img
+        src="../assets/mongo.png"
+        alt="mongodb"
         :style="{ width: isMobile ? '80px' : '160px' }"
       />
     </div>
