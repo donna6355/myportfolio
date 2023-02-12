@@ -3,10 +3,24 @@
     <div>
       <Frame
         mode="vertical"
+        title="오늘의 분리수거 웹앱 개발 및 유지 보수"
+        :isMobile="isMobile"
+        img="oyster.jpeg"
+        period="오이스터에이블  |  2022.04 ~ 현재"
+        url="https://apps.apple.com/kr/app/%EC%98%A4%EB%8A%98%EC%9D%98-%EB%B6%84%EB%A6%AC%EC%88%98%EA%B1%B0/id1446402924"
+        :imgs="obunAppImgs"
+        :details="obunAppDetails"
+        :stacks="obunAppStacks"
+      >
+      </Frame>
+    </div>
+    <div :style="{ 'margin-top': isMobile ? '40px' : '80px' }">
+      <Frame
+        mode="vertical"
         title="베타 앱 개발"
         :isMobile="isMobile"
         img="rplay.svg"
-        period="플랙스뉴럴랩스  |  2020.12 ~ 2022.04"
+        period="플랙스뉴럴랩스  |  2021.12 ~ 2022.04"
         url="https://play.google.com/store/apps/details?id=live.rplay"
         :imgs="rplayAppImgs"
         :details="rplayAppDetails"
@@ -54,6 +68,11 @@ export default {
   },
   data() {
     return {
+      obunAppImgs: ["obun_1.png", "obun_2.png"],
+      obunAppDetails: [
+        "하이브리드 웹앱과 크로스 플랫폼",
+        "개발문서 정리의 중요성",
+      ],
       rplayImgs: [
         "rplay_1.png",
         "rplay_2.png",
@@ -95,6 +114,7 @@ export default {
         "MongoDB",
         "Tailwindcss",
       ],
+      obunAppStacks: ["Dart", "Flutter", "FlutterInAppWebview", "OneSignal"],
       butlerStacks: ["Dart", "Flutter", "Hive", "Provider"],
     };
   },
