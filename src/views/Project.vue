@@ -70,8 +70,10 @@ export default {
     return {
       obunAppImgs: ["obun_1.png", "obun_2.png"],
       obunAppDetails: [
-        "하이브리드 웹앱과 크로스 플랫폼",
+        "하이브리드 웹앱의 한계와 장점",
+        "패키지 선택의 중요성",
         "개발문서 정리의 중요성",
+        "유지보수와 업데이트",
       ],
       rplayImgs: [
         "rplay_1.png",
