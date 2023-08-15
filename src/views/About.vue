@@ -23,6 +23,17 @@
             >github 둘러보기</a
           >
         </li>
+        <li>
+          <a
+            class="git"
+            href="https://www.notion.so/Entrance-41d4d1212c234065931bb2ab4213c264"
+            target="_blank"
+            :style="{
+              color: darkMode ? '#ceecf8' : '#0492c2',
+            }"
+            >Notion 둘러보기</a
+          >
+        </li>
       </ol>
       <h3>Career</h3>
       <ol>
