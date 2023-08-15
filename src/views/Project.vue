@@ -21,7 +21,7 @@
         :isMobile="isMobile"
         img="oyster.jpeg"
         period="오이스터에이블  |  2022.04 ~ 현재"
-        url="https://apps.apple.com/kr/app/%EC%98%A4%EB%8A%98%EC%9D%98-%EB%B6%84%EB%A6%AC%EC%88%98%EA%B1%B0/id1446402924"
+        url="https://apps.apple.com/kr/app/id1446402924"
         :imgs="obunAppImgs"
         :details="obunAppDetails"
         :stacks="obunAppStacks"
