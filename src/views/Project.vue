@@ -6,7 +6,7 @@
         title="키오스크 프로그램 POC"
         :isMobile="isMobile"
         img="oyster.jpeg"
-        period="오이스터에이블  |  2022.04 ~ 현재"
+        period="오이스터에이블  |  2022.04 ~ 2023.11"
         url=""
         :imgs="lalaImgs"
         :details="lalaDetails"
@@ -20,7 +20,7 @@
         title="오늘의 분리수거 웹앱 개발 및 유지 보수"
         :isMobile="isMobile"
         img="oyster.jpeg"
-        period="오이스터에이블  |  2022.04 ~ 현재"
+        period="오이스터에이블  |  2022.04 ~ 2023.11"
         url="https://apps.apple.com/kr/app/id1446402924"
         :imgs="obunAppImgs"
         :details="obunAppDetails"
@@ -118,7 +118,13 @@ export default {
         "butler_5.png",
       ],
       moodeowImgs: ["moodeow_1.png", "moodeow_2.png", "moodeow_3.png"],
-      lalaImgs: ["lala_1.png", "lala_2.png", "lala_3.png", "lala_4.png"],
+      lalaImgs: [
+        "lala_1.png",
+        "lala_2.png",
+        "lala_3.png",
+        "lala_4.png",
+        "lala_5.png",
+      ],
       rplayDetails: [
         "PC, 모바일, OS, 기기 특성 등 반응형 웹 제작시 주의사항",
         "기획자, 디자이너, 개발자 간의 의사소통과 협업의 중요성",
@@ -156,7 +162,15 @@ export default {
         "MongoDB",
         "Tailwindcss",
       ],
-      lalaStacks: ["Dart", "Flutter", "serial_port", "bloc", "ffi", "RabbitMQ"],
+      lalaStacks: [
+        "Dart",
+        "Flutter",
+        "serial_port",
+        "bloc",
+        "ffi",
+        "RabbitMQ",
+        "payment",
+      ],
       obunAppStacks: ["Dart", "Flutter", "FlutterInAppWebview", "OneSignal"],
       butlerStacks: ["Dart", "Flutter", "Hive", "Provider"],
       moodeowStacks: ["Dart", "Flutter", "tflite", "localization"],
