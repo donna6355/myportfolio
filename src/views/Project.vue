@@ -2,6 +2,19 @@
   <div>
     <div>
       <Frame
+        mode="vertical"
+        title="리브팜 앱 리빌딩"
+        :isMobile="isMobile"
+        img="fc.png"
+        period="퓨처커넥트  |  2023.11 ~ 2024.01"
+        url="https://play.google.com/store/apps/details?id=com.livfarm.crm"
+        :imgs="fcImgs"
+        :details="fcDetails"
+        :stacks="fcStacks"
+      />
+    </div>
+    <div :style="{ 'margin-top': isMobile ? '40px' : '80px' }">
+      <Frame
         mode="horizontal"
         title="키오스크 프로그램 POC"
         :isMobile="isMobile"
@@ -125,6 +138,7 @@ export default {
         "lala_4.png",
         "lala_5.png",
       ],
+      fcImgs: ["fc_2.gif", "fc_0.gif", "fc_1.gif"],
       rplayDetails: [
         "PC, 모바일, OS, 기기 특성 등 반응형 웹 제작시 주의사항",
         "기획자, 디자이너, 개발자 간의 의사소통과 협업의 중요성",
@@ -153,6 +167,13 @@ export default {
         "API 호출과 인터셉터 활용",
         "위젯을 이용한 다양한 UI 구현",
       ],
+      fcDetails: [
+        "레거시 코드 분석 및 문제점과 개선사항 정의",
+        "재사용성 및 유지 보수를 고려한 리빌딩 계획 수립",
+        "사용자 관점의 사용성 분석 및 벤치마킹을 통한 UI/UX 개선",
+        "클린 아키텍처를 위한 패턴 및 의존성 주입",
+        "유닛테스트 코드 작성 및 QA 진행",
+      ],
       rplayAppStacks: ["Dart", "Flutter", "GetX", "Dio"],
       rplayStacks: [
         "Vuejs",
@@ -170,6 +191,15 @@ export default {
         "ffi",
         "RabbitMQ",
         "payment",
+      ],
+      fcStacks: [
+        "Dart",
+        "Flutter",
+        "bloc",
+        "freezed",
+        "getIt",
+        "FCM",
+        "iamport",
       ],
       obunAppStacks: ["Dart", "Flutter", "FlutterInAppWebview", "OneSignal"],
       butlerStacks: ["Dart", "Flutter", "Hive", "Provider"],
