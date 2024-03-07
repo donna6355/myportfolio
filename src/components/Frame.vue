@@ -10,6 +10,7 @@
       class="imgSlide"
       :style="{
         width: mode == 'vertical' ? '239px' : isMobile ? '100%' : '60%',
+        height: 'auto',
         margin: mode == 'vertical' ? '0 auto' : '0',
       }"
       style="background: #fff"
