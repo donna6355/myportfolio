@@ -109,12 +109,6 @@ export default {
   data() {
     return {
       obunAppImgs: ["obun_1.png", "obun_2.png"],
-      obunAppDetails: [
-        "하이브리드 웹앱의 한계와 장점",
-        "패키지 선택과 비즈니스 로직 분리",
-        "유지보수와 업데이트",
-        "개발문서 정리의 중요성",
-      ],
       rplayImgs: [
         "rplay_1.png",
         "rplay_2.png",
@@ -138,7 +132,13 @@ export default {
         "lala_4.png",
         "lala_5.png",
       ],
-      fcImgs: ["fc_2.gif", "fc_0.gif", "fc_1.gif"],
+      fcImgs: ["fc_2.gif", "fc_0.gif", "fc_1.gif"],      
+      obunAppDetails: [
+        "하이브리드 웹앱의 한계와 장점",
+        "패키지 선택과 비즈니스 로직 분리",
+        "유지보수와 업데이트",
+        "개발문서 정리의 중요성",
+      ],
       rplayDetails: [
         "PC, 모바일, OS, 기기 특성 등 반응형 웹 제작시 주의사항",
         "기획자, 디자이너, 개발자 간의 의사소통과 협업의 중요성",
@@ -146,8 +146,8 @@ export default {
         "재사용 가능한 코드 및 속도와 성능에 대한 고민",
       ],
       lalaDetails: [
-        "윈도우, 리눅스, MacOs 등 진정한 크로스 플랫폼의 위력",
-        "시리얼 통신, ffi, TCP, bloc, tflite 등 새로운 시도",
+        "윈도우, 리눅스, MacOs, 안드로이드 등 크로스플랫폼 작업",
+        "시리얼 통신, ffi, TCP, MQTT 등 다양한 프로토콜 경험",
         "설계와 패턴. 재사용성과 확장성의 고민",
         "에러 핸들링과 테스트의 중요성",
       ],
@@ -156,7 +156,7 @@ export default {
         "어플 사용자의 니즈와 다양한 모바일 기기 특성",
         "어떤 라이브러리가 성능, 기능 면에서 나의 어플과 잘 맞는가",
         "데이터 저장을 위해 어떤 방식을 사용할 것인가",
-        "리팩토링의 중요성",
+        "리팩토링의 필요성",
       ],
       moodeowDetails: [
         "로컬라이제이션을 구현하는 다양한 방법",
